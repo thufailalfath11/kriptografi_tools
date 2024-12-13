@@ -3,6 +3,7 @@ from cryptography.hazmat.primitives.asymmetric import rsa, padding
 from cryptography.hazmat.primitives import serialization, hashes
 import hashlib
 import os
+import base64
 
 # ======== 1. KRIPTOGRAFI SIMETRIS (Fernet/AES) ========
 # Generate symmetric key from user input (password or phrase)
@@ -121,7 +122,7 @@ if __name__ == "__main__":
     print("=== Pilih Jenis Kriptografi ===")
     print("1. Kriptografi Simetris (AES)")
     print("2. Kriptografi Asimetris (RSA)")
-    print("3. Hashing")
+    print("3. Hashing SHA-256")
     print("4. Hashing MD5")
     choice = input("Masukkan pilihan (1/2/3/4): ")
 
